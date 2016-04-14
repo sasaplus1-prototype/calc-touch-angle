@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <title>calculate touch angle</title>
+    <style>
+      .touch-area {
+        background-color: #edeefe;
+        border-radius: 5px;
+        box-shadow: 0 0 10px #666666;
+        height: 400px;
+        width: 400px;
+      }
+
+      .position-areas {
+        height: 200px;
+        opacity: 0.2;
+        pointer-events: none;
+        position: absolute;
+        transition: opacity 0.2s ease 0s;
+        width: 200px
+      }
+      .left-top-area {
+        background-color: red;
+        border-top-left-radius: 5px;
+        top: 8px;
+      }
+      .right-top-area {
+        background-color: green;
+        border-top-right-radius: 5px;
+        left: 208px;
+        top: 8px;
+      }
+      .left-bottom-area {
+        background-color: blue;
+        border-bottom-left-radius: 5px;
+        top: 208px;
+      }
+      .right-bottom-area {
+        background-color: yellow;
+        border-bottom-right-radius: 5px;
+        left: 208px;
+        top: 208px;
+      }
+      .active {
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="js-touch-area" class="touch-area"></div>
+    <div id="js-left-top-area" class="position-areas left-top-area"></div>
+    <div id="js-right-top-area" class="position-areas right-top-area"></div>
+    <div id="js-left-bottom-area" class="position-areas left-bottom-area"></div>
+    <div id="js-right-bottom-area" class="position-areas right-bottom-area"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
